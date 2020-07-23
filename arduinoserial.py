@@ -5,8 +5,18 @@ try:
     for p in ports:
         print (p)
     po=str(p)
-    arduino=serial.Serial(po[:4],9600)
-    time.sleep(.2)
+    print(po)
+    
+    if "COM" in po:
+        arduino=serial.Serial(po[:4],9600)
+        time.sleep(.2)
+    elif "/dev" in po:
+        arduino=serial.Serial(po[:12],9600)
+        time.sleep(.2) 
+    elif "usbmodem" in po:
+        arduino=serial.Serial(po[:21],9600)
+        time.sleep(.2) 
+        
 except:
     imprimir=print("No se pudo conectar")
     
