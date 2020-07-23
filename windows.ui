@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>378</width>
-    <height>348</height>
+    <height>538</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -54,8 +54,8 @@
   <widget class="QLabel" name="etiqueta">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>130</y>
+     <x>30</x>
+     <y>300</y>
      <width>291</width>
      <height>41</height>
     </rect>
@@ -74,7 +74,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>240</y>
+     <y>360</y>
      <width>81</width>
      <height>71</height>
     </rect>
@@ -96,7 +96,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>240</y>
+     <y>360</y>
      <width>81</width>
      <height>71</height>
     </rect>
@@ -114,10 +114,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>330</y>
-     <width>171</width>
-     <height>20</height>
+     <x>100</x>
+     <y>499</y>
+     <width>281</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -131,7 +131,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>220</y>
+     <y>340</y>
      <width>121</width>
      <height>111</height>
     </rect>
@@ -149,14 +149,43 @@
   <widget class="QComboBox" name="ubiCOM">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>100</y>
-     <width>73</width>
-     <height>22</height>
+     <x>30</x>
+     <y>160</y>
+     <width>301</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:  rgb(255, 255, 255)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sistemaop">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>200</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>120</y>
+     <width>151</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(255, 0, 127)</string>
+   </property>
+   <property name="text">
+    <string>CONECTADO A:</string>
    </property>
   </widget>
   <zorder>label_led_on</zorder>
@@ -167,6 +196,8 @@
   <zorder>label</zorder>
   <zorder>label_2</zorder>
   <zorder>ubiCOM</zorder>
+  <zorder>sistemaop</zorder>
+  <zorder>label_3</zorder>
  </widget>
  <resources/>
  <connections/>
